@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+}
+
+body {
+    background: #212121;
+    /* overflow-y: hidden; */
+}
+
+/* unauthenticated */
+nav {
+    height: 9vh;
+    background: #191919;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+nav > div.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+nav > div.links > a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #B3B1B1;
+    font-size: 14px;
+    transition: 0.4s ease;
+}
+nav > div.links > a.active {
+    color: white;
+}
+nav > div.links > a:hover {
+    color: #fff;
+}
+
+nav div.display > h4 {
+    color: #B3B1B1;
+    font-size: 20px;
+}
+
+.container {
+    height: calc(100vh - 9vh);
+    display: flex;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.container > h3 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #BDBDBD;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.container > p {
+    width: 50%;
+    text-align: justify;
+    color: #8d8d8d;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    align-items: center;
+}
+.container > .btns {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container > .btns > a {
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+.container > .btns > a:nth-child(1) {
+    background: #005EFF;
+    color: #fff;
+}
+.container > .btns > a:nth-child(1):hover {
+    background: #004acb;
+}
+.container > .btns > a:nth-child(2) {
+    border: 1px solid #005EFF;
+    color: #005EFF;
+    background: none;
+}
+.container > .btns > a:nth-child(2):hover {
+    background: #005EFF;
+    color: white;
+}
+.container > div.notesDisplay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15vh;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+.container > div.notesDisplay > div.note {
+    background: #2E2E2E;
+    /* box-shadow: 0 0 40px rgba(0,00,0,0.3); */
+    background: linear-gradient(180deg, #2e2e2e, #212121);
+}
+.container > div.notesDisplay > div.note > h3 {
+    color: #b3b1b196;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.container > div.notesDisplay > div.note:nth-child(1) {
+    border-top: 6px solid #33CCFF;
+}
+.container > div.notesDisplay > div.note:nth-child(2) {
+    border-top: 6px solid #FF0066;
+}
+
+/* Account creation */
+.accountCreation {
+    color: #b3b1b1c4;
+    font-size: 23px;
+}
+form.creation {
+    border: 1px solid red;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form.creation > .colh {
+    display: flex;
+    height: 100%;
+    border: 1px solid cyan;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
